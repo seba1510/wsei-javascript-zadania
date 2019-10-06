@@ -1,4 +1,4 @@
-//Zadanie 1
+//Zadanie 0
 function distFromAverage(numberArray){
 var average = 0;
 numberArray.forEach(element => {
@@ -15,7 +15,7 @@ return returnarray;
 
 distFromAverage([1,2,3,4,5,6,7])
 
-//Zadanie 2
+//Zadanie 1
 let fruits = ['apple', 'orange','banana','peach','pear'];
 console.log(fruits[0]);
 console.log(fruits[fruits.length-1]);
