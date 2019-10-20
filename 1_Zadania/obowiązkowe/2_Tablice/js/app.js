@@ -22,3 +22,12 @@ console.log(fruits[fruits.length-1]);
 for(let count = 0; count < fruits.length; count++){
     console.log(fruits[count]);
 }
+
+//Zadanie 3
+function printTable(array) {
+    for(var i = 0; i < array.length; i++){
+        console.log(array[i])
+    }  
+}
+
+//
