@@ -1,3 +1,27 @@
+//Zadanie 1
+
+function checkArray(arr){
+    var result = [];
+    for(let i=0; i < arr.length; i++){
+        if (arr[i,0] %2 == 0)
+        {
+        result[i] = true;
+        }
+        else   
+        {
+        result[i] = false;
+        }
+        }
+return result;
+}
+checkArray(arr = [
+    [11, 12],
+    [42, 2],
+    [-4, -120],
+    [0, 0],
+    [1, 34],
+    ]);
+
 
 var task1Array = [
     [2, 3],
