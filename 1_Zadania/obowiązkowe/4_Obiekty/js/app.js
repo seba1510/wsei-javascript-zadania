@@ -3,7 +3,7 @@ city = {
 "capital":"string",
 "population":"number", 
 "president":"string", 
-"primeMinister": "tablica stringów", };
+"primeMinister": [raz, dwa, trzy], };
 console.log(city);
 
 //Zadanie 0b
@@ -20,3 +20,13 @@ function sayHello(){
     console.log("hello");
 }
 console.log(person);
+
+//Zadanie 3
+var ingredients = ["Carrot" , "Water", "Tomato"];
+recipe = {"title":"Soup", "servings":5, "ingredients":read()};
+function read(){
+    for(let i=0; i<3; i++){
+        console.log(ingredients[i]);
+    }
+}
+console.log(recipe);
