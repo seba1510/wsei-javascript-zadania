@@ -59,12 +59,25 @@ calculator.save(2, 3);
 console.log(calculator.sum());
 console.log(calculator.multiply());
 
+//Zadanie 2
+var stairs = 
+{step: 0, 
+up()
+	{
+	this.step+=1;
+	},
+down()
+	{
+	this.step-=1;
+	},
+printStep()
+	{
+	console.log(this.step);
+	}
+};
 
-
-
-
-
-
-
-
-
+stairs.up();
+stairs.up();
+stairs.up();
+stairs.down(); 
+stairs.printStep();
