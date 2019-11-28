@@ -30,3 +30,18 @@ function read(){
     }
 }
 console.log(recipe);
+
+//Zadanie 6
+var spoon = {
+    isExist: true
+}
+
+var fork = spoon;
+fork.isExist  = false;
+
+if(spoon.isExist == true){
+console.log("Spoon exist");
+}
+else {
+	console.log("Spoon doesn't exist");
+}
