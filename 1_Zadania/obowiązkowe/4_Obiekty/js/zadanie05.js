@@ -31,3 +31,13 @@ var animals = [
     }
 
 ]
+
+for (var prop in animals)
+	{
+		console.log(animals[prop]);
+	}
+	
+for (let i = 0; i<animals.length; i++)
+	{
+		console.log(animals[i])
+	}	
