@@ -27,5 +27,3 @@ Robot.prototype.sayHi("Michael");
 Robot.prototype.changeName("Kozak");
 Robot.prototype.fixIt();
 Robot.prototype.sayHi("Michael");
-
-
