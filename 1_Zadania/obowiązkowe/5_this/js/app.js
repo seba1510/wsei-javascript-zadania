@@ -59,7 +59,7 @@ calculator.save(2, 3);
 console.log(calculator.sum());
 console.log(calculator.multiply());
 
-//Zadanie 2
+//Zadanie 3
 var stairs = 
 {step: 0, 
 up()
