@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//Twoj komentarz ... Deklaracja funkcji jeden()
 function jeden() {
 
-    //Twoj komentarz ...
+    //Twoj komentarz ... zmienna1 będzie widoczna w ciele funkcji w której została utworzona + w zagnieżdżonych
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //Twoj komentarz ... deklaracja funkcji zagnieżdżonej dwa()
     function dwa() {
 
-        //Twoj komentarz ...
+        //Twoj komentarz ... użycie zmiennej w drugiej funkcji mimo że została  zadeklarowwana w pierwszej
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //Twoj komentarz ... zmienna2 jest zadeklarowania w ciele funkcji dwa(), dlatego tylko tam jest widoczna
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //Twoj komentarz ... wykonanie funkcji dwa()
     dwa();
 
-    //Twoj komentarz ...
+    //Twoj komentarz ... zmienna 2 nie będzie widoczna w tym miejscu
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//Twoj komentarz ... wykonanie funkcji jeden()
 jeden()
