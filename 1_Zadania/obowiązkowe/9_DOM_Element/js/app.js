@@ -8,100 +8,107 @@ document.addEventListener("DOMContentLoaded", function () {
     /*
     Poniżej napisz kod rozwiązujący zadania
      */
-    //zad 0
+//zadanie 0
 function getDatasInfo(links){
-var tak=[];
-for(i=0;i<links.length;i++){
-    tak.push(links[i].getAttribute("data-color"));
+var tab=[];
+for(i=0;i<links.length;i++)
+{
+    tab.push(links[i].getAttribute("data-color"));
 }
-console.log(tak);
-return tak;
+console.log(tab);
+return tab;
     }
 
-//zad 1
+
+
+//zadanie 1
     var homeElement = document.getElementById("home");
-    var childElements = document.querySelector(".oferts").children;
+    var oferts = document.querySelector(".oferts").children;
     var banner = document.querySelector(".ban");
     var blocks = document.querySelectorAll(".block");
     var links = document.querySelector(".links").children;
 
 console.log("tagName: "+homeElement.tagName+" className: "+homeElement.className);
-for(i=0;i<childElements.length;i++)
-    {
-    console.log("className: "+childElements[i].className +" tagName: "+childElements[i].tagName);
-    }
-console.log("className: "+banner.className+" tagName: "+banner.tagName);
-for(i=0;i<childElements.length;i++)
-    {
-    console.log("className: "+blocks[i].className+" tagName: "+blocks[i].tagName);
-    }
-for(i=0;i<childElements.length;i++)
-    {
-    console.log("className: "+links[i].className+" tagName: "+links[i].tagName);
-    }
-    
-// zad 2
-var blocks = document.querySelectorAll(".block");
-for(i=0;i<blocks.length;i++)
+for(let i=0;i<oferts.length;i++)
 {
-    console.log("Innerhtml"+blocks[i].innerHTML);
-    console.log("outerhtml"+blocks[i].outerHTML);
+    console.log("className: "+oferts[i].className +" tagName: "+oferts[i].tagName);
 }
-for(i=0;i<blocks.length;i++){
+console.log("className: "+banner.className+" tagName: "+banner.tagName);
+for(let i=0;i<oferts.length;i++)
+{
+    console.log("className: "+blocks[i].className+" tagName: "+blocks[i].tagName);
+}
+for(let i=0;i<oferts.length;i++)
+{
+    console.log("className: "+links[i].className+" tagName: "+links[i].tagName);
+}
+    
+	
+	
+//zadanie 2
+var blocks = document.querySelectorAll(".block");
+for(let i=0;i<blocks.length;i++)
+{
+    console.log("innerHTML "+blocks[i].innerHTML);
+    console.log("outerHTML "+blocks[i].outerHTML);
+}
+for(let i=0;i<blocks.length;i++)
+{
 blocks[i].innerHTML="Nowa wartość diva o klasie blocks";
 }
-for(i=0;i<blocks.length;i++)
+for(let i=0;i<blocks.length;i++)
 {
-    console.log("Innerhtml"+blocks[i].innerHTML);
-    console.log("outerhtml"+blocks[i].outerHTML);
+    console.log("innerHTML "+blocks[i].innerHTML);
+    console.log("outerHTML "+blocks[i].outerHTML);
 }
 
-//zad 3
+//zadanie 3
    
 var foo=document.getElementById("mainFooter");
 
-function getId(foo)
-{
-    return foo.id;
-}
-getId(foo);
+    function getId(foo)
+	{ 
+        return foo.id;
+    }
+    getId(foo);
 
 
-//zad 4
+//zadanie 4
 var childElements = document.querySelector(".oferts").children;
 function getTags(childElements){
-var tak=[];
-for(i=0;i<childElements.length;i++){
-    tak.push(childElements[i]);
+var tab=[];
+for(let i=0;i<childElements.length;i++){
+    tab.push(childElements[i]);
 }
-return tak;
+return tab;
 }
 getTags(childElements);
 
-//zad 5
+//zadanie 5
 var banner = document.querySelector(".ban");
 
 function getClassInfo(banner){
     console.log(banner);
-var tak1=[];
-for(i=0;i<banner.length;i++)
+var tab=[];
+for(let i=0;i<banner.length;i++)
 {
-    tak1.push(banner[i]);
+    tab.push(banner[i]);
 }
-return tak1;
+return tab;
 
 }
 console.log(getClassInfo());
 
 
-//zad 6
-var elementy=document.getElementsByTagName("nav")[0].getElementsByTagName("li");
+//zadanie 6
+var elem=document.getElementsByTagName("nav")[0].getElementsByTagName("li");
 
-function setDataDirection(elementy){
-    for(i=0;i<elementy.length;i++){
-        elementy[i].setAttribute('data-direction','top'); //('nazwa atrybutu','tekst atrybutu')
+function setDataDirection(elem){
+    for(let i=0;i<elem.length;i++)
+	{
+        elem[i].setAttribute('data-direction','top');
     }
 }
-setDataDirection(elementy);
+setDataDirection(elem);
 
 });
