@@ -55,7 +55,7 @@ tab.push(elements[i].querySelectorAll("div"));
 console.log(tab);
 
     
-    //zad 3
+    //zadanie 3
 var element=document.getElementsByTagName("article");
 
 for(let i=0;i<element.length;i++)
