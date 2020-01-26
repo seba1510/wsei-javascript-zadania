@@ -8,7 +8,6 @@ for(let i=0;i<element.length;i++)
 
 function foo()
 	{
-	var tak=this.getAttribute("id");
     this.parentElement.removeChild(this);
 	}
 </script>
