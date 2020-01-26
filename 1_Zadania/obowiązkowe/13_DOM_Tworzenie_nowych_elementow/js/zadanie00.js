@@ -1,17 +1,9 @@
 <script>
-var element1=document.getElementsByClassName("deleteBtn");
-
-for(let i=0;i<element1.length;i++)
-{
-    element1[i].addEventListener("click",foo);
-}
-
-
-function foo()
-{
-   var fos=this;
-   fos=fos.parentElement.parentElement;
-   fos.parentElement.removeChild(fos);
-}
+    
+   const buttons = Array.from(document.getElementsByClassName("deleteBtn"));
+    buttons.forEach(b => b.addEventListener('click', function(){
+        const trSelector = this.parentElement.parentElement;
+        trSelector.remove();
+    }))
 
 </script>
